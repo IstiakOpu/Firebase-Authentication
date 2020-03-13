@@ -54,7 +54,7 @@ public class Sign_in extends AppCompatActivity implements View.OnClickListener {
                  break;
 
             case R.id.signuptextviewid:
-
+                finish();
                 Intent intent=new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
 
@@ -111,7 +111,7 @@ public class Sign_in extends AppCompatActivity implements View.OnClickListener {
                {
 
                    Toast.makeText(getApplicationContext(),"Sign In Success",Toast.LENGTH_SHORT).show();
-
+                    finish();
                    Intent intent=new Intent(getApplicationContext(),Home.class);
                    startActivity(intent);
                }

@@ -35,7 +35,7 @@ public class Home extends AppCompatActivity {
         if(item.getItemId()==R.id.signoutid)
         {
             FirebaseAuth.getInstance().signOut();
-            fileList();
+            finish();
             Intent intent=new Intent(getApplicationContext(),Sign_in.class);
             startActivity(intent);
         }

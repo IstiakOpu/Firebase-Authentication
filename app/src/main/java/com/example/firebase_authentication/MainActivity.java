@@ -56,7 +56,7 @@ private FirebaseAuth mAuth;
                 break;
 
             case R.id.signintextviewid:
-
+                finish();
                 Intent intent=new Intent(getApplicationContext(),Sign_in.class);
                 startActivity(intent);
         }
